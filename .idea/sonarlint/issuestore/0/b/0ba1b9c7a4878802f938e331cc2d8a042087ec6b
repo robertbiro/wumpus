@@ -1,6 +1,7 @@
 
-G	java:S106"+Replace this use of System.out by a logger.(¨ÑÓ¾8•àÿôÒ1
+]	java:S125"<This block of commented-out lines of code should be removed.(®ß‹Úùÿÿÿÿ8Èÿê–Ó1
+G	java:S106"+Replace this use of System.out by a logger.(¨ÑÓ¾8äÿê–Ó1
 H
-java:S1602",Remove useless curly braces around statement(°›ìU8˜àÿôÒ1
-L	java:S106"+Replace this use of System.err by a logger.( ç˜•þÿÿÿÿ8¡àÿôÒ1
-G	java:S106 "+Replace this use of System.err by a logger.(à´Ž¾8¢àÿôÒ1
+java:S1602",Remove useless curly braces around statement(°›ìU8åÿê–Ó1
+X	java:S125"<This block of commented-out lines of code should be removed.(¡Õ±š8çÿê–Ó1
+G	java:S106"+Replace this use of System.err by a logger.(à´Ž¾8èÿê–Ó1

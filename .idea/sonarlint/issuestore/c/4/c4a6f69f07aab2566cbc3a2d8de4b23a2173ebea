@@ -1,17 +1,18 @@
 
 
-java:S1186c"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8êâôœÒ1
+java:S1186g"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8Œ†‚Ô1
 
-java:S1186h"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8êâôœÒ1
-L	java:S106)"+Replace this use of System.out by a logger.(¨à®öùÿÿÿÿ8÷âôœÒ1
-X	java:S125N"<This block of commented-out lines of code should be removed.(ÄÚÍî8ŠËÅ§Ò1
+java:S1186l"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8†‚Ô1
+L	java:S106""+Replace this use of System.out by a logger.(ª¦‘şÿÿÿÿÿ8˜†‚Ô1
+L	java:S106-"+Replace this use of System.out by a logger.(¨à®öùÿÿÿÿ8¥†‚Ô1
+X	java:S125R"<This block of commented-out lines of code should be removed.(ÄÚÍî8Ÿ†‚Ô1
 ]
-java:S1117R";Rename "monster" which hides the field declared at line 20.(Œ¶çäÿÿÿÿÿ8ãôœÒ1
-G	java:S106n"+Replace this use of System.out by a logger.(…¶ãÍ8’ãôœÒ1
-H	java:S106„"+Replace this use of System.out by a logger.(ÒÚ‰†8‘è¥¦Ò1
+java:S1117V";Rename "monster" which hides the field declared at line 20.(Œ¶çäÿÿÿÿÿ8 †‚Ô1
+G	java:S106r"+Replace this use of System.out by a logger.(…¶ãÍ8ª†‚Ô1
+H	java:S106‰"+Replace this use of System.out by a logger.(ÒÚ‰†8„Ø‘Ô1
 b
-java:S1854‘"?Remove this useless assignment to local variable "goldMessage".(µ­æûÿÿÿÿ8•ãôœÒ1
+java:S1854–"?Remove this useless assignment to local variable "goldMessage".(µ­æûÿÿÿÿ8¬†‚Ô1
 S
-java:S1481‘"0Remove this unused "goldMessage" local variable.(µ­æûÿÿÿÿ8—ãôœÒ1
+java:S1481–"0Remove this unused "goldMessage" local variable.(µ­æûÿÿÿÿ8­†‚Ô1
 [
-java:S1144"8Remove this unused private "updateInfoPanelGold" method.(Úà‡üÿÿÿÿ8™ãôœÒ1
+java:S1144”"8Remove this unused private "updateInfoPanelGold" method.(Úà‡üÿÿÿÿ8­†‚Ô1

@@ -7,8 +7,6 @@ Z
 *src/main/java/org/example/views/Board.java,5\d\5d2f035a716450995cc7566d297fe81230c34565
 ]
 -src/main/java/org/example/views/MainMenu.java,8\d\8d6c2f3c9c04b66edb9ed6d09eb7ca68097aee04
-`
-0src/main/java/org/example/views/LoginScreen.java,9\a\9aa3855d0b1e03cdd3929741c5e71dab7b958c01
 :
 
 wumpus.iml,b\3\b3caceb0a93fe2962335aacd4b60860ea15581ec
@@ -48,3 +46,15 @@ e
 5src/main/java/org/example/entities/HeroDirection.java,2\0\200403a36824f05ac7b5ee85e49aa0b4400feef5
 c
 3src/main/java/org/example/entities/MonsterName.java,d\a\da82c4995af527926328e1cd9ba22393487420e8
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+f
+6src/main/java/org/example/views/SetupDialogWindow.java,b\5\b570df6e1d8f8f43bcc159b78d685ae1eaec0c24
+h
+8src/main/java/org/example/repository/UserRepository.java,6\a\6ac2338be643e4a3aa5f2a926e5f1909e7404f26
+h
+8src/main/java/org/example/service/MonsterController.java,2\6\26f143e8bb13b0e2309360f6600dbbb7aacfc988
+8
+Notes.md,8\c\8c49401c18719f8b0402f8f5945dc66eac0586cb
+q
+Asrc/main/java/org/example/repository/HibernateUserRepository.java,4\0\404562cba3273433de1e470ece54b45bacc9bd0e

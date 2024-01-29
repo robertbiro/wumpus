@@ -1,13 +1,11 @@
 
 E
-java:S1604D"(Make this anonymous inner class a lambda(ªıˆ8ûÙ½Ò1
-u
-java:S1450"XRemove the "userPanel" field and declare it as a local variable in the relevant methods.(•ğÈ”8˜Ú½Ò1
+java:S1604E"(Make this anonymous inner class a lambda(ªıˆ8‚îÌÔ1
 R
-java:S1948"0Make "mainController" transient or serializable.(µ¾õêıÿÿÿÿ8ôşİæÒ1
+java:S1948"0Make "mainController" transient or serializable.(µ¾õêıÿÿÿÿ8Æ©“‚Ô1
 I
-java:S1948",Make "connection" transient or serializable.(ÿ›ÅÒ8¡ ½Ò1
+java:S1948",Make "connection" transient or serializable.(ÿ›ÅÒ8§îÌÔ1
 k
-java:S32527"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8®Ú½Ò1
+java:S32528"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ÆîÌÔ1
 K
-java:S1068".Remove this unused "connection" private field.(ÿ›ÅÒ8º¡ ½Ò1
+java:S1068".Remove this unused "connection" private field.(ÿ›ÅÒ8ÑîÌÔ1

@@ -28,7 +28,7 @@ public class MainController implements KeyListener {
     private int remainingMonsters;
     private InfoPanel infoPanel;
     private String endMessage;
-
+    private HeroService heroService;
 
     public MainController(Board board) {
         System.out.println("Hello from Main !!");

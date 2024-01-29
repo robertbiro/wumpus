@@ -1,11 +1,17 @@
 
 J
-java:S1604M"(Make this anonymous inner class a lambda(Ï¹ÿîúÿÿÿÿ8½ìš«Ò1
-J
-java:S1604l"(Make this anonymous inner class a lambda(Ï¹ÿîúÿÿÿÿ8˜«ê«Ò1
+java:S1604\"(Make this anonymous inner class a lambda(¢’–ìúÿÿÿÿ8ÆØ–Ô1
+F
+java:S1604"(Make this anonymous inner class a lambda(ÏÛÌ¥8ÈØ–Ô1
 
-java:S1488‰"^Immediately return this expression instead of assigning it to the temporary variable "button".(˜ âÏúÿÿÿÿ8€×ˆ«Ò1
-]
-java:S3252v"@Use static access with "javax.swing.SwingConstants" for "RIGHT".(é§…û8¾×ˆ«Ò1
+java:S1488±"^Immediately return this expression instead of assigning it to the temporary variable "button".(˜ âÏúÿÿÿÿ8ÉØ–Ô1
+K
+java:S1948")Make "newUser" transient or serializable.(ÿó¿Êûÿÿÿÿ8ƒŸØ–Ô1
+M
+java:S1948!"0Make "userRepository" transient or serializable.(×Š¾8ƒŸØ–Ô1
+m
+java:S3457m"KFormat specifiers or lambda should be used instead of string concatenation.(¸ì¥ãıÿÿÿÿ8œŸØ–Ô1
+^
+java:S3252"@Use static access with "javax.swing.SwingConstants" for "RIGHT".(é§…û8¤ŸØ–Ô1
 _
-java:S1117ƒ"ARename "passwordField" which hides the field declared at line 21.(İÆüû8Â×ˆ«Ò1
+java:S1117«"ARename "passwordField" which hides the field declared at line 25.(İÆüû8¨ŸØ–Ô1

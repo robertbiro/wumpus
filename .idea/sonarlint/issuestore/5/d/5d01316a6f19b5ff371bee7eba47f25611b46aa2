@@ -1,3 +1,5 @@
 
-M
-java:S1068"2Remove this unused "mainController" private field.(µΎυκύÿÿÿÿ
+R
+java:S1948"0Make "mainController" transient or serializable.(µΎυκύÿÿÿÿ8τψ¨‘Τ1
+T
+java:S1068"2Remove this unused "mainController" private field.(µΎυκύÿÿÿÿ8„ω¨‘Τ1
