@@ -9,8 +9,10 @@ public class InfoPanel extends JPanel {
     private JLabel welcomeUserLabel;
     private JLabel numberOfMonstersLabel;
     private JLabel numberOfStepsLabel;
-    private MainController mainController;
     private JLabel endMessageLabel;
+    private JLabel goldMessageLabel;
+    private JLabel keyMessageLabel;
+    private MainController mainController;
 
     public InfoPanel(MainController mainController) {
         this.mainController = mainController;
@@ -27,6 +29,15 @@ public class InfoPanel extends JPanel {
 
         numberOfStepsLabel = new JLabel("The hero took " + mainController.getStepsOfHero() +  ((mainController.getStepsOfHero() > 1) ? " steps" : " step"));
         add(numberOfStepsLabel);
+        //System.out.println(mainController.getStepsOfHero());
+        add(Box.createVerticalStrut(20));
+
+        goldMessageLabel = new JLabel();
+        add(goldMessageLabel);
+        add(Box.createVerticalStrut(20));
+
+        keyMessageLabel = new JLabel();
+        add(keyMessageLabel);
         add(Box.createVerticalStrut(20));
 
         endMessageLabel = new JLabel();
@@ -51,5 +62,13 @@ public class InfoPanel extends JPanel {
     public  void stepsInfo(int numberOfSteps) {
         numberOfStepsLabel.setText("The hero took " + numberOfSteps + ((numberOfSteps > 1) ? " steps" : " step"));
         repaint();
+    }
+
+    public void goldInfo(String goldMessage) {
+        goldMessageLabel.setText(goldMessage);
+    }
+
+    public void keyInfo(String keyMessage) {
+        keyMessageLabel.setText(keyMessage);
     }
 }

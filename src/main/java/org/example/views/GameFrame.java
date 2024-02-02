@@ -1,6 +1,7 @@
 package org.example.views;
 
 import org.example.repository.UserRepository;
+import org.example.service.HeroService;
 import org.example.service.MainController;
 
 import javax.swing.*;
@@ -17,9 +18,12 @@ public class GameFrame extends JFrame {
     private UserPanel userPanel;
     private MainController mainController;
     private Connection connection;
+    private HeroService heroService;
 
-    public GameFrame(UserRepository userRepository) {
+    public GameFrame(UserRepository userRepository, MainController mainController, Board board) {
         //this.connection = connection; -> to the Hibernate doesn't need
+        this.mainController = mainController;
+        this.board = board;
             initializeUserPanel(userRepository);
             initializeGamePanel();
             setUpInitialLayout();
@@ -34,9 +38,6 @@ public class GameFrame extends JFrame {
     private void initializeGamePanel() {
             JPanel gamePanel = new JPanel(new BorderLayout());
 
-            // Board:
-            board = new Board(800, 800);
-            mainController = new MainController(board);
             gamePanel.add(board, BorderLayout.CENTER);
 
             // InfoPanel:
@@ -61,7 +62,7 @@ public class GameFrame extends JFrame {
             setLocationRelativeTo(null);  // Center the frame
 
             // Add key listener to the board
-            board.addKeyListener(mainController);
+            //board.addKeyListener();
 
             // Set focusable to true to receive key events
             board.setFocusable(true);
@@ -89,19 +90,25 @@ public class GameFrame extends JFrame {
             board.requestFocusInWindow();
             }
 
-    // Method to update InfoPanel with the latest information
+    // Methods to update InfoPanel with the latest information
     private void updateInfoPanel() {
-            String welcomeUser = userPanel.getWelcomeUser();
-            infoPanel.updateUser(welcomeUser);
+        System.out.println("sec");
+        String welcomeUser = userPanel.getWelcomeUser();
+        infoPanel.updateUser(welcomeUser);
 
-            int numberOfMonsters = mainController.getRemainingMonsters();
-            infoPanel.updateMonsterInfo(numberOfMonsters);
+        int numberOfMonsters = mainController.getRemainingMonsters();
+        infoPanel.updateMonsterInfo(numberOfMonsters);
 
-            String endGameMessage = mainController.getEndMessage();
-            infoPanel.endGameInfo(endGameMessage);
+        String endGameMessage = mainController.getEndMessage();
+        infoPanel.endGameInfo(endGameMessage);
 
-            int numberOfSteps = mainController.getStepsOfHero();
-            infoPanel.stepsInfo(numberOfSteps);
-            }
+        int numberOfSteps = mainController.updateInfoPanelSteps();
+        infoPanel.stepsInfo(numberOfSteps);
 
+        String goldMessage = mainController.updateInfoPanelGold();
+        infoPanel.goldInfo(goldMessage);
+
+        String keyMessage = mainController.upateInfoPanelKey();
+        infoPanel.keyInfo(keyMessage);
+    }
 }

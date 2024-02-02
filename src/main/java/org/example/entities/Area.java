@@ -76,9 +76,7 @@ public class Area {
                 for (int i = 0; i < size; i++) {
                         for (int j = 0; j < size; j++) {
                                 int object =  tiles[i][j];
-                                if (i == 0 || j == 0) {
-                                        tiles[i][j] = wallValue;
-                                } else if (object == 0) {
+                                if (object == 0) {
                                         tiles[i][j] = floorValue;
                                 }
                         }

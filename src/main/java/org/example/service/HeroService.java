@@ -1,11 +1,9 @@
 package org.example.service;
 
-import org.example.entities.HeroDirection;
-import org.example.views.Board;
+import java.awt.event.KeyListener;
 
 
-public interface HeroService {
-
+public interface HeroService extends KeyListener {
 
     void moveUp();
 
@@ -15,14 +13,13 @@ public interface HeroService {
 
     void moveRight();
 
-    void updateDirection(HeroDirection newHeroDirection);
-
     void lifeChanging();
 
     void getGold();
 
     void getKey();
 
-    void triggerBomb(Board board);
+    int getHeroSteps();
+
 
 }

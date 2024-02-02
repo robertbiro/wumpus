@@ -1,25 +1,35 @@
-package org.example.service;
+package org.example.entities;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.example.entities.Monster;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
 @Setter
-public class MonsterController {
+@Getter
+public class MonsterCollection {
 
     private List<Monster> monsters;
-    private BombController bombController;
+    private Monster monster;
 
-    public MonsterController() {
+    public MonsterCollection() {
         this.monsters = new ArrayList<>();
     }
-
     public void addMonster(Monster monster) {
         monsters.add(monster);
+    }
+
+    public void removeMonster(Monster monster) {
+        monsters.remove(monster);
+    }
+
+    public List<Monster> getMonsters() {
+        return new ArrayList<>(monsters);
+    }
+
+    public int getSize() {
+        return monsters.size();
     }
 
     public void removeDeadMonsters() {

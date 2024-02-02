@@ -2,11 +2,10 @@ package org.example.views;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.example.service.BombController;
 import org.example.entities.*;
-import org.example.service.MonsterController;
 import org.example.entities.tools.Gold;
 import org.example.entities.tools.Key;
+import org.example.service.BombServiceImpl;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,26 +19,26 @@ public class Board extends JPanel {
     private final int tileSize;
     private Area area;
     private Hero hero;
-    private MonsterController monsterController;
+    private MonsterCollection monsterCollection;
     private Bomb bomb;
-    private BombController bombController;
+    private BombServiceImpl bombServiceImpl;
     private Gold gold;
     private Key key;
 
 
-    public Board(int windowWidth, int windowHeight) {
+    public Board(int windowWidth, int windowHeight, Area area) {
+        this.area = area;
         tileSize = Math.min(windowWidth, windowHeight) / desiredTileCount;
         setPreferredSize(new Dimension(tileSize * desiredTileCount, tileSize * desiredTileCount + 40));
         setVisible(true);
     }
-
 
     @Override
     public void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
         drawTiles(graphics);
         drawHero(graphics);
-        for (Monster monster : monsterController.getMonsters()) {
+        for (Monster monster : monsterCollection.getMonsters()) {
             if (monster.isAlive()) {
                 drawMonster(graphics, monster);
             }
@@ -81,24 +80,24 @@ public class Board extends JPanel {
 
     private void drawHero(Graphics graphics) {
         String heroImagePath = "";
-        if (hero.getDirection() == HeroDirection.UP) {
+        if (hero.getHeroDirection() == HeroDirection.UP) {
             heroImagePath = HERO_UP_PATH;
-        } else if (hero.getDirection() == HeroDirection.DOWN) {
+        } else if (hero.getHeroDirection()   == HeroDirection.DOWN) {
             heroImagePath = HERO_DOWN_PATH;
-        } else if (hero.getDirection() == HeroDirection.LEFT) {
+        } else if (hero.getHeroDirection() == HeroDirection.LEFT) {
             heroImagePath = HERO_LEFT_PATH;
-        } else if (hero.getDirection() == HeroDirection.RIGHT) {
+        } else if (hero.getHeroDirection() == HeroDirection.RIGHT) {
             heroImagePath = HERO_RIGHT_PATH;
         }
+        System.out.println(hero.getHeroDirection() + " from Board.....");
 
-        PositionedImage heroImage = new PositionedImage(heroImagePath, hero.getCurrentX() * tileSize, hero.getCurrentY() * tileSize);
-        System.out.println("Board: " + hero.getCurrentX() + " : " + hero.getCurrentY());
+        PositionedImage heroImage = new PositionedImage(heroImagePath, hero.getX() * tileSize, hero.getY() * tileSize);
         heroImage.draw(graphics);
     }
 
     public void drawBomb(Graphics graphics) {
         String bombPath = BOMB_PATH;
-        bombController.currentCoordinatesOfBomb();
+        bombServiceImpl.currentCoordinatesOfBomb();
         System.out.println("coordinate of: " + bomb.getPosX() + " : " + bomb.getPosY()); // ez jo
         PositionedImage bombImage = new PositionedImage(bombPath, bomb.getPosX() * tileSize, bomb.getPosY() * tileSize);
         bombImage.draw(graphics);

@@ -8,129 +8,58 @@ import org.example.entities.tools.Key;
 import org.example.views.Board;
 import org.example.views.InfoPanel;
 
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-
 @Setter
 @Getter
-public class MainController implements KeyListener {
+public class MainController {
 
     private Board board;
     private Area area;
     private Monster monster;
-    private MonsterController monsterController;
+    private MonsterServiceImpl monsterServiceImpl;
     private Hero hero;
     private int stepsOfHero;
     private Bomb bomb;
     private Gold gold;
     private Key key;
-    private BombController bombController;
+    private BombServiceImpl bombServiceImpl;
     private int remainingMonsters;
     private InfoPanel infoPanel;
     private String endMessage;
     private HeroService heroService;
+    private MonsterService monsterService;
+    private BombService bombService;
 
-    public MainController(Board board) {
-        System.out.println("Hello from Main !!");
+    public MainController(Area area, Board board, Hero hero, Bomb bomb, HeroService heroService, MonsterService monsterService,
+                          BombService bombService) {
+        this.area = area;
         this.board = board;
-        this.area = new Area(12);
-
+        this.hero = hero;
+        this.bomb = bomb;
+        this.heroService = heroService;
+        this.monsterService = monsterService;
+        this.bombService = bombService;
+        this.remainingMonsters = area.getNumberOfMonster();
+        this.stepsOfHero = heroService.getHeroSteps();
         infoPanel = new InfoPanel(this);
+        updateInfoPanelSteps();
+        updateInfoPanelGold();
+        upateInfoPanelKey();
+        board.setFocusable(true);
+        board.requestFocusInWindow();
+        board.addKeyListener(heroService);
+        //-----------------
 
-
-        this.monsterController = new MonsterController();
-        board.setMonsterController(monsterController);
-        this.hero = new Hero(1, 1, HeroDirection.DOWN);
-        this.stepsOfHero = 0;
-        System.out.println("from constructor: " + hero.getCurrentY() + " : " + hero.getCurrentY());
-
-        this.gold = new Gold(area);
-        board.setGold(gold);
-        hero.setGold(gold);
-
-        this.key = new Key(area);
-        board.setKey(key);
-        hero.setKey(key);
-
-        //only one bomb "exist" which is visible when it is triggered.
-        this.bomb = new Bomb(board, hero, this);
         board.setBomb(bomb);
         hero.setBomb(bomb);
 
-        this.bombController = new BombController(area, board, hero);
-        bombController.setBomb(bomb);
-        board.setBombController(bombController);
-        board.addMouseListener(bombController);
-        hero.setBombController(bombController);
+        //bombServiceImpl.setBomb(bomb);
+        board.setBombServiceImpl(bombServiceImpl);
+        board.addMouseListener(bombServiceImpl);
 
-        for (int i = 0; i < area.getNumberOfMonster(); i++) {
-            this.monster = new Monster(area, hero, board, bomb);
-            monster.getRandomStartPosition(area);
-            if (monster.isAlive()) {
-                monsterController.addMonster(monster);
-                monster.setHero(hero);
-            }
-        }
-        this.remainingMonsters = area.getNumberOfMonster();
-
-        board.setArea(area);
-        hero.setArea(area);
         board.setHero(hero);
 
-        board.setFocusable(true);
-        board.requestFocusInWindow();
-        //board.addKeyListener(this);
     }
 
-    public void handleBombImpact() {
-        for (Monster monster : monsterController.getMonsters()) {
-            if (monster.isMonsterAffectedByBomb(bomb)) {
-                monster.setAlive(false);
-                remainingMonsters--;
-                updateInfoPanelMonster();
-                // Check for game completion
-                if (remainingMonsters == 0) {
-                    updateInfoPanelEndGame();
-                }
-            }
-        }
-        //to remove dead monsters from the controller
-        monsterController.removeDeadMonsters();
-        board.repaint();
-    }
-
-    @Override
-    public void keyTyped(KeyEvent e) {
-
-    }
-
-    @Override
-    public void keyPressed(KeyEvent e) {
-
-    }
-
-    @Override
-    public void keyReleased(KeyEvent e) {
-        System.out.println("Key Released: " + e.getKeyChar());
-        if (e.getKeyCode() == KeyEvent.VK_UP) {
-            hero.moveUp();
-            hero.updateDirection(HeroDirection.UP);
-        } else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-            hero.moveDown();
-            hero.updateDirection(HeroDirection.DOWN);
-        } else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-            hero.moveLeft();
-            hero.updateDirection(HeroDirection.LEFT);
-        } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            hero.moveRight();
-            hero.updateDirection(HeroDirection.RIGHT);
-        }
-        stepsOfHero = hero.getSteps();
-        hero.getGold();
-        hero.getKey();
-        board.repaint();
-        updateInfoPanelMonster(); // Add this line to update the info panel after handling the key event
-    }
     public void startGame() {
         // Perform any actions needed to start the game
         // You can add additional logic here, such as starting timers or initializing game state
@@ -145,11 +74,23 @@ public class MainController implements KeyListener {
         infoPanel.updateMonsterInfo(remainingMonsters);
     }
 
-    private void updateInfoPanelGold() {
+    public String updateInfoPanelGold() {
+        String goldMessage = "";
         if(hero.isHasGold()) {
-            String goldMessage = "Hoho, you have a gold !!!";
+            goldMessage = "Hoho, you have a gold !!!";
         }
-        infoPanel.updateMonsterInfo(remainingMonsters);
+        return goldMessage;
+        //infoPanel.updateMonsterInfo(remainingMonsters);
     }
-
+    public String upateInfoPanelKey() {
+        String keyMessage = "";
+        if(hero.isHasKey()) {
+            keyMessage = "Lucky man, you have a key! :-)";
+        }
+        return keyMessage;
+    }
+    public int updateInfoPanelSteps() {
+        infoPanel.stepsInfo(hero.getSteps());
+        return heroService.getHeroSteps();
+    }
 }
