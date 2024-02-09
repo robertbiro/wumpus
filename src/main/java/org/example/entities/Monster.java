@@ -21,12 +21,12 @@ public class Monster {
     private MonsterService monsterService;
     private boolean isAlive = true;
 
-    public Monster(Area area, Hero hero, Board board, Bomb bomb) {
+    public Monster(Area area, Hero hero, Board board) {
         this.name = MonsterName.getName().toString();
         this.area = area;
         this.board = board;
         this.hero = hero;
-        this.bomb = bomb;
+        //this.bomb = bomb;
     }
 
 }

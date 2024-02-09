@@ -68,17 +68,17 @@ public class BombServiceImpl implements BombService {
     @Override
     public void currentCoordinatesOfBomb() {
         if (hero.getHeroDirection() == HeroDirection.UP) {
-            bomb.setPosY(hero.getY() - distance);
-            bomb.setPosX(hero.getX());
+            bomb.setY(hero.getY() - distance);
+            bomb.setX(hero.getX());
         } else if (hero.getHeroDirection() == HeroDirection.DOWN) {
-            bomb.setPosX(hero.getX());
-            bomb.setPosY(hero.getY() + distance);
+            bomb.setX(hero.getX());
+            bomb.setY(hero.getY() + distance);
         } else if (hero.getHeroDirection() == HeroDirection.LEFT) {
-            bomb.setPosY(hero.getY());
-            bomb.setPosX(hero.getX() - distance);
+            bomb.setY(hero.getY());
+            bomb.setX(hero.getX() - distance);
         } else if (hero.getHeroDirection() == HeroDirection.RIGHT) {
-            bomb.setPosY(hero.getY());
-            bomb.setPosX(hero.getX() + distance);
+            bomb.setY(hero.getY());
+            bomb.setX(hero.getX() + distance);
         }
     }
     @Override

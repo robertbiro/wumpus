@@ -1,17 +1,13 @@
 
-M
-java:S2589O"7Remove this expression which always evaluates to "true"(ı¿Ê´
-7
-java:S1170"!Make this final field static too.(Ï¢úô
-7
-java:S1170"!Make this final field static too.(ãÁû
-7
-java:S1170"!Make this final field static too.(—¸›å
-7
-java:S1170"!Make this final field static too.(–ü¹
-<
-java:S1170"!Make this final field static too.(¢á±øùÿÿÿÿ
-E	java:S106E"+Replace this use of System.out by a logger.(ĞÅîÂúÿÿÿÿ
-E	java:S106G"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
-E
-java:S1144B"/Remove this unused private "printTiles" method.(Í¸ş–
+>
+java:S1170"!Make this final field static too.(Ï¢úô8â­Å™×1
+>
+java:S1170"!Make this final field static too.(ãÁû8â­Å™×1
+>
+java:S1170"!Make this final field static too.(–ü¹8˜îı™×1
+C
+java:S1170"!Make this final field static too.(¢á±øùÿÿÿÿ8˜îı™×1
+L	java:S1068"+Replace this use of System.out by a logger.(ĞÅîÂúÿÿÿÿ8ê­Å™×1
+L	java:S106:"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¦îı™×1
+L
+java:S11445"/Remove this unused private "printTiles" method.(Í¸ş–8ªîı™×1

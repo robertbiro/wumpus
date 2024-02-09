@@ -21,5 +21,4 @@ public interface HeroService extends KeyListener {
 
     int getHeroSteps();
 
-
 }

@@ -22,6 +22,7 @@ public class PositionedImage {
     public static final String BOMB_PATH = "C:\\Users\\user\\Documents\\after_greenfox\\wumpus\\img\\bomb.png";
     public static final String GOLD_PATH = "C:\\Users\\user\\Documents\\after_greenfox\\wumpus\\img\\gold_pile.png";
     public static final String KEY_PATH = "C:\\Users\\user\\Documents\\after_greenfox\\wumpus\\img\\key.png";
+    public static final String EXPLOSION_PATH = "C:\\Users\\user\\Documents\\after_greenfox\\wumpus\\img\\explosion.png";
     private int posX, posY;
 
     public PositionedImage(String filename, int posX, int posY) {

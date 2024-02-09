@@ -93,22 +93,22 @@ public class UserPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 newUser = new User();
-                    newUser.setFirstName(firstNameField.getText());
-                    newUser.setLastName(lastNameField.getText());
-                    newUser.setEmail(emailField.getText());
-                    newUser.setPhoneNumber(phoneNumberField.getText());
-                    newUser.setUserName(usernameField.getText());
-                    // getPassword: get a char array that may be modified,
-                    // so the password will really not stay in memory!!!
-                    newUser.setPassword(String.valueOf(passwordField.getPassword()));
-                    if(!userRepository.isUserNameExists(usernameField.getText())) {
-                        userRepository.saveUser(newUser);
-                        handleLoginAttempt();
-                        welcomeUser = usernameField.getText();
-                    } else {
-                        logger.log(Level.WARNING, "Username " + usernameField.getText() + " already exist.");
-                        JOptionPane.showMessageDialog(UserPanel.this, "Username already exists. Please choose a different username.");
-                    }
+                newUser.setFirstName(firstNameField.getText());
+                newUser.setLastName(lastNameField.getText());
+                newUser.setEmail(emailField.getText());
+                newUser.setPhoneNumber(phoneNumberField.getText());
+                newUser.setUserName(usernameField.getText());
+                // getPassword: get a char array that may be modified,
+                // so the password will really not stay in memory!!!
+                newUser.setPassword(String.valueOf(passwordField.getPassword()));
+                if(!userRepository.isUserNameExists(usernameField.getText())) {
+                    userRepository.saveUser(newUser);
+                    handleLoginAttempt();
+                    welcomeUser = usernameField.getText();
+                } else {
+                    logger.log(Level.WARNING, "Username " + usernameField.getText() + " already exist.");
+                    JOptionPane.showMessageDialog(UserPanel.this, "Username already exists. Please choose a different username.");
+                }
 
             }
         });

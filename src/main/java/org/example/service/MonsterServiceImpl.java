@@ -67,7 +67,7 @@ public class MonsterServiceImpl implements MonsterService {
 
     @Override
     public boolean isMonsterAffectedByBomb(Bomb bomb) {
-        return  monster.getX() == bomb.getPosX() && monster.getY() == bomb.getPosY();
+        return  monster.getX() == bomb.getX() && monster.getY() == bomb.getY();
     }
 
     @Override

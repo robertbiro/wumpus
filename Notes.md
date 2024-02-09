@@ -40,3 +40,6 @@ https://www.javaguides.net/2019/07/registration-form-using-java-swing-jdbc-mysql
 
 To dependency Injection:
 https://www.digitalocean.com/community/tutorials/java-dependency-injection-design-pattern-example-tutorial
+
+To game art:
+https://opengameart.org/content/comic-explosion-kaboom

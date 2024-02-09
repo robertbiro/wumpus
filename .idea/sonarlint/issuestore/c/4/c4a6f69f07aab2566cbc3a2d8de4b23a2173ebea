@@ -1,18 +1,17 @@
 
 
-java:S1186g"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8Œ†‚Ô1
-
-java:S1186l"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8†‚Ô1
-L	java:S106""+Replace this use of System.out by a logger.(ª¦‘şÿÿÿÿÿ8˜†‚Ô1
-L	java:S106-"+Replace this use of System.out by a logger.(¨à®öùÿÿÿÿ8¥†‚Ô1
-X	java:S125R"<This block of commented-out lines of code should be removed.(ÄÚÍî8Ÿ†‚Ô1
+java:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²¸ˆ¬8å¤¨³×1
+Ÿ
+java:S1186‘"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8÷ñ¥³×1
+¤
+java:S1186›"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿ8úñ¥³×1
+X	java:S125@"<This block of commented-out lines of code should be removed.(˜…¨í8ƒò¥³×1
+G	java:S106E"+Replace this use of System.out by a logger.(­Œ¿8„ò¥³×1
+G	java:S106P"+Replace this use of System.out by a logger.(ÒÚ‰†8…ò¥³×1
+]	java:S125R"<This block of commented-out lines of code should be removed.(şŸôóùÿÿÿÿ8†ò¥³×1
+F	java:S106k"+Replace this use of System.out by a logger.(íÖ²m8Šò¥³×1
+Y	java:S125"<This block of commented-out lines of code should be removed.(ªŒá8‹ò¥³×1
 ]
-java:S1117V";Rename "monster" which hides the field declared at line 20.(Œ¶çäÿÿÿÿÿ8 †‚Ô1
-G	java:S106r"+Replace this use of System.out by a logger.(…¶ãÍ8ª†‚Ô1
-H	java:S106‰"+Replace this use of System.out by a logger.(ÒÚ‰†8„Ø‘Ô1
-b
-java:S1854–"?Remove this useless assignment to local variable "goldMessage".(µ­æûÿÿÿÿ8¬†‚Ô1
-S
-java:S1481–"0Remove this unused "goldMessage" local variable.(µ­æûÿÿÿÿ8­†‚Ô1
-[
-java:S1144”"8Remove this unused private "updateInfoPanelGold" method.(Úà‡üÿÿÿÿ8­†‚Ô1
+java:S1144s";Remove this unused private "updateInfoPanelEndGame" method.(ÕÇ°Ãùÿÿÿÿ8‘ò¥³×1
+]
+java:S1144w";Remove this unused private "updateInfoPanelMonster" method.(÷¥ûõúÿÿÿÿ8’ò¥³×1

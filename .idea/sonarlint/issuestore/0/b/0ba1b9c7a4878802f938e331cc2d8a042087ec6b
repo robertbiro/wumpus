@@ -1,7 +1,8 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(®ß‹Úùÿÿÿÿ8Èÿê–Ó1
-G	java:S106"+Replace this use of System.out by a logger.(¨ÑÓ¾8äÿê–Ó1
-H
-java:S1602",Remove useless curly braces around statement(°›ìU8åÿê–Ó1
-X	java:S125"<This block of commented-out lines of code should be removed.(¡Õ±š8çÿê–Ó1
-G	java:S106"+Replace this use of System.err by a logger.(à´¾8èÿê–Ó1
+]	java:S125"<This block of commented-out lines of code should be removed.(®ß‹Úùÿÿÿÿ8Í…²³×1
+G	java:S106"+Replace this use of System.out by a logger.(¨ÑÓ¾8í…²³×1
+G	java:S106."+Replace this use of System.out by a logger.(è¯Ÿ—8ñ…²³×1
+R
+java:S1481A"0Remove this unused "bombService" local variable.(²Ïîúÿÿÿÿ8ö…²³×1
+X	java:S125D"<This block of commented-out lines of code should be removed.(¡Õ±š8ø…²³×1
+G	java:S106H"+Replace this use of System.err by a logger.(à´¾8ù…²³×1

@@ -1,11 +1,16 @@
 
 E
-java:S1604E"(Make this anonymous inner class a lambda(ªıˆ8‚îÌÔ1
+java:S1604F"(Make this anonymous inner class a lambda(ªıˆ8“ÜØÔÖ1
 R
-java:S1948"0Make "mainController" transient or serializable.(µ¾õêıÿÿÿÿ8Æ©“‚Ô1
+java:S1948"0Make "mainController" transient or serializable.(µ¾õêıÿÿÿÿ8¥ÜØÔÖ1
 I
-java:S1948",Make "connection" transient or serializable.(ÿ›ÅÒ8§îÌÔ1
+java:S1948",Make "connection" transient or serializable.(ÿ›ÅÒ8¥ÜØÔÖ1
+O
+java:S1948"-Make "heroService" transient or serializable.(™†‹ñùÿÿÿÿ8¥ÜØÔÖ1
 k
-java:S32528"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ÆîÌÔ1
+java:S32529"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8¯ÜØÔÖ1
+X	java:S125A"<This block of commented-out lines of code should be removed.(™Â« 8°ÜØÔÖ1
 K
-java:S1068".Remove this unused "connection" private field.(ÿ›ÅÒ8ÑîÌÔ1
+java:S1068".Remove this unused "connection" private field.(ÿ›ÅÒ8¹ÜØÔÖ1
+Q
+java:S1068"/Remove this unused "heroService" private field.(™†‹ñùÿÿÿÿ8¹ÜØÔÖ1

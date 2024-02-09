@@ -11,7 +11,7 @@ public class Hero {
 
     private int x;
     private int y;
-    private int life = 1;
+    private int life = 5;
     private int steps;
     private Bomb bomb;
     private boolean throwBomb;

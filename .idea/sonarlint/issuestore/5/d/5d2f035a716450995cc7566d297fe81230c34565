@@ -1,20 +1,23 @@
 
 C
-java:S1170"!Make this final field static too.(îÕ«Ùúÿÿÿÿ8ìë–œÒ1
+java:S1170"!Make this final field static too.(îÕ«Ùúÿÿÿÿ8¿§­×1
 C
-java:S1948"&Make "area" transient or serializable.(¹ïÕ¥8óë–œÒ1
+java:S1948"&Make "area" transient or serializable.(¹ïÕ¥8Ÿ¿§­×1
 C
-java:S1948"&Make "hero" transient or serializable.(‡ø‚Ş8ôë–œÒ1
-P
-java:S1948"3Make "monsterController" transient or serializable.(ôºãÏ8ôë–œÒ1
+java:S1948"&Make "hero" transient or serializable.(‡ø‚Ş8Ÿ¿§­×1
+U
+java:S1948"3Make "monsterCollection" transient or serializable.(¾³·øÿÿÿÿ8 ¿§­×1
 C
-java:S1948"&Make "bomb" transient or serializable.(É“È 8õë–œÒ1
-R
-java:S1948"0Make "bombController" transient or serializable.(ËŞ‚İıÿÿÿÿ8öë–œÒ1
+java:S1948"&Make "bomb" transient or serializable.(É“È 8 ¿§­×1
+H
+java:S1948"&Make "mine" transient or serializable.(âş±„ûÿÿÿÿ8 ¿§­×1
+S
+java:S1948"1Make "bombServiceImpl" transient or serializable.(¡ƒåŸøÿÿÿÿ8 ¿§­×1
 C
-java:S1948"&Make "gold" transient or serializable.(Ÿ†‰ÿ8öë–œÒ1
+java:S1948"&Make "gold" transient or serializable.(Ÿ†‰ÿ8 ¿§­×1
 B
-java:S1948"%Make "key" transient or serializable.(ìã¾û8÷ë–œÒ1
-X	java:S125H"<This block of commented-out lines of code should be removed.(şÖ´«8«ì–œÒ1
-G	java:S106_"+Replace this use of System.out by a logger.(àÓ—à8¾ì–œÒ1
-L	java:S106f"+Replace this use of System.out by a logger.(§æĞşÿÿÿÿ8Ìì–œÒ1
+java:S1948"%Make "key" transient or serializable.(ìã¾û8 ¿§­×1
+R
+java:S1948"0Make "mainController" transient or serializable.(µ¾õêıÿÿÿÿ8 ¿§­×1
+X	java:S125K"<This block of commented-out lines of code should be removed.(şÖ´«8§¿§­×1
+G	java:S106m"+Replace this use of System.out by a logger.(Ã˜ñÔ8«¿§­×1

@@ -9,16 +9,17 @@ import org.example.views.Board;
 @Setter
 public class Bomb{
 
-    private int posX, posY;
+    private int x;
+    private int y;
     private Board board;
     private Hero hero;
     private boolean isVisible;
 
-    public Bomb(Board board,  Hero hero) {
+    public Bomb(Board board, Hero hero) {
         this.board = board;
         this.hero = hero;
-        this.posX = hero.getX();
-        this.posY = hero.getY();
+        this.x = hero.getX();
+        this.y = hero.getY();
         this.isVisible = false;
     }
 }

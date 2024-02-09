@@ -22,6 +22,7 @@ public class HeroServiceImpl implements HeroService {
     private Board board;
     private Gold gold;
     private Key key;
+    private MainController mainController;
     public HeroServiceImpl(Area area, Board board, Gold gold, Key key, Hero hero) {
         this.area = area;
         this.board = board;
@@ -85,7 +86,6 @@ public class HeroServiceImpl implements HeroService {
 
     @Override
     public void keyPressed(KeyEvent e) {
-        System.out.println("Key Released: " + e.getKeyChar());
         if (e.getKeyCode() == KeyEvent.VK_UP) {
             moveUp();
             hero.setHeroDirection(HeroDirection.UP);
@@ -102,6 +102,7 @@ public class HeroServiceImpl implements HeroService {
         hero.setSteps(hero.getSteps() + 1);
         getGold();
         getKey();
+
         board.repaint();
         //updateInfoPanelMonster(); // Add this line to update the info panel after handling the key event
     }
